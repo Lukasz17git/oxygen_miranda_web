@@ -1,0 +1,23 @@
+.button-primary,
+.button-secondary {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-width: 13.5rem;
+   max-width: 100%;
+   width: fit-content;
+   height: 3.75rem;
+   color: var(--white);
+   font-size: 0.875rem;
+   padding: 1rem 1.5rem;
+}
+
+.button {
+   &-primary {
+      background-color: var(--main);
+   }
+
+   &-secondary {
+      border: solid 2px var(--main);
+   }
+}

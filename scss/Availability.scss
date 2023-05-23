@@ -1,0 +1,41 @@
+.hero-availability {
+   background-color: var(--black);
+   padding-top: 2.25rem;
+   padding-bottom: 2.25rem;
+   display: flex;
+   flex-direction: column;
+   gap: 2.25rem;
+
+   @media only screen and (min-width: 1000px) {
+      flex-direction: row;
+      align-items: center;
+
+      &>.button-primary {
+         margin-left: auto;
+      }
+   }
+
+   &>label {
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &>input {
+         position: relative;
+         border-bottom: solid 2px var(--main);
+         background-color: none;
+         background-color: var(--black);
+         color: var(--grey);
+         padding: 0.5rem 1rem 0.5rem 1.75rem;
+         max-width: 20rem;
+
+         &::-webkit-calendar-picker-indicator {
+            background-image: url('/public/Icons/date-picker-2.svg');
+            position: absolute;
+            left: 0;
+         }
+      }
+   }
+
+}

@@ -1,13 +1,20 @@
 {
-  "name": "vite",
-  "version": "0.0.0",
+  "name": "oxygen_miranda_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "vite": "^2.1.5",
-    "vite-plugin-mpa": "^0.3.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lukasz17git/oxygen_miranda_web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lukasz17git/oxygen_miranda_web/issues"
+  },
+  "homepage": "https://github.com/Lukasz17git/oxygen_miranda_web#readme"
 }

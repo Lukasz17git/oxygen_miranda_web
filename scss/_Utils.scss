@@ -1,0 +1,31 @@
+@mixin text-title {
+   font-family: 'Old Standard TT', serif;
+   font-weight: 400;
+}
+
+@mixin text-normal {
+   font-family: 'Archivo', sans-serif;
+   font-weight: 400;
+}
+
+@mixin text-normal-bold {
+   font-family: 'Archivo', sans-serif;
+   font-weight: 700;
+   letter-spacing: 2.8px;
+}
+
+@mixin text-mini {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+}
+
+@mixin text-mini-bold {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+}
+
+@mixin smax {
+   max-width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+}

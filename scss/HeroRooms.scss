@@ -1,0 +1,28 @@
+.hero-rooms {
+   &>strong {
+      text-align: center;
+   }
+
+   &>h2 {
+      text-align: center;
+   }
+
+   &-properties {
+      position: absolute;
+      width: fit-content;
+      margin: auto;
+      z-index: 2;
+   }
+
+   &-room {
+      position: relative;
+      top: -2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 26rem;
+      margin: auto;
+      padding: 1rem 3rem;
+      gap: 1.5rem;
+   }
+}

@@ -1,0 +1,66 @@
+.hero-video {
+   background-color: var(--black);
+   color: var(--white);
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+   position: relative;
+   z-index: 1;
+
+   &>strong {
+      color: var(--main) !important;
+   }
+
+   &>p {
+      color: var(--silver);
+   }
+
+   &>.button-primary {
+      margin: 1rem 0;
+   }
+
+   &-wrapper {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+   }
+
+   &-play {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+
+      &>iframe {
+         position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   @media only screen and (min-width: 1000px) {
+      padding-right: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &::after {
+         content: '';
+         position: absolute;
+         right: 0;
+         width: 30%;
+         top: 0;
+         height: 100%;
+         background-color: var(--main);
+         z-index: -1;
+      }
+
+      &-wrapper {
+         position: absolute;
+         width: 40%;
+         left: 50%;
+
+      }
+   }
+}
