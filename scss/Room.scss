@@ -21,7 +21,9 @@
       @include text-mini();
    }
 
-   &-price {
+   &-price,
+   &-price--old,
+   &-price--new {
       color: var(--main);
       font-size: 2rem;
 
@@ -33,6 +35,20 @@
          content: '/Night';
          font-size: 0.5em;
       }
+   }
+
+   &-price--old {
+      text-decoration: line-through;
+      font-size: 1.5rem;
+      text-align: right;
+
+      &::after {
+         text-decoration: none;
+      }
+   }
+
+   &-price--new {
+      color: rgb(213, 45, 84);
    }
 
 }

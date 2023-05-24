@@ -1,0 +1,40 @@
+@import '../scss/Utils';
+
+.contact {
+   &-cards {
+      &>img {
+         width: 100%;
+         max-width: 24rem;
+      }
+
+   }
+
+   &-card {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 20rem;
+
+      &-details {
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+
+         &>b {
+            @include text-title()
+         }
+
+         &>p {
+            color: var(--grey);
+         }
+      }
+
+      &>span {
+         position: absolute;
+         right: 0;
+         top: 0;
+         font-size: 10rem;
+      }
+
+   }
+}

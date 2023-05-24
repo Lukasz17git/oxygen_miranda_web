@@ -31,6 +31,14 @@
    <link rel="stylesheet" href="/css/Footer.css">
    <link rel="stylesheet" href="/css/Menu.css">
    <link rel="stylesheet" href="/css/HeroRooms.css">
+   <link rel="stylesheet" href="/css/Burger.css">
+
+   <!-- Room Section -->
+   <link rel="stylesheet" href="/css/RoomsContainer.css">
+
+   <!-- Link Swiper's CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -38,7 +46,11 @@
    <nav class="navbar">
       <section id='navbar-section' class="navbar-section">
          <button id='burger' class="icon navbar-burger">
-            <img src="/public/Icons/burger.svg" alt="menu" role="menubar" loading="lazy" />
+            <svg width="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+               <path d="M30 33h40c3.723 0 7.5 3.126 7.5 8.578S74.773 50 70 50H50" class="line top" />
+               <path d="M30 50h40" class="line middle" />
+               <path d="M70 67H30s-7.5-.802-7.5-8.366C22.5 51.071 30 50 30 50h20" class="line bottom" />
+            </svg>
          </button>
          <div class="navbar-logo">
             <a href="/" class="navbar-logo-icon">
@@ -53,6 +65,7 @@
             <img src="/public/Icons/search.svg" alt="search" />
          </button>
          <ul class="navbar-navigation">
+            <li></li>
             <li>
                <a href="/about">About Us</a>
             </li>
@@ -73,15 +86,15 @@
       <h3>THE ULTIMATE LUXURY</h3>
       <h1>Ultimate Room</h1>
       <div class="header-navigation">
-         <span>Home</span>
-         <span>|</span>
-         <span>Rooms</span>
+         <b>Home</b>
+         <b>|</b>
+         <b>Rooms</b>
       </div>
    </section>
    <!-- Rooms Container -->
    <section class="rooms-container">
       <div class="room-container">
-         <img />
+         <img src="/public/Images/hotel-1.jpg" />
          <div class="room-properties">
             <div class="icon">
                <img src="/public/Icons/bed.svg" alt="bed" loading="lazy" />
@@ -116,20 +129,15 @@
    <!-- Navigation -->
    <section class="rooms-navigation">
       <button class="icon">
-         <img />
+         <img src="/public/Icons/side-arrow.svg" alt="arrow" loading="lazy" />
       </button>
+      <button class="icon rooms-navigation--active">1</button>
+      <button class="icon">2</button>
+      <button class="icon">3</button>
+      <span class="dots">···</span>
+      <button class="icon">6</button>
       <button class="icon">
-         <img />
-      </button>
-      <button class="icon">
-         <img />
-      </button>
-      <span>...</span>
-      <button class="icon">
-         <img />
-      </button>
-      <button class="icon">
-         <img />
+         <img src="/public/Icons/side-arrow.svg" alt="arrow" loading="lazy" />
       </button>
    </section>
    <!-- Footer -->
@@ -227,8 +235,7 @@
    </footer>
    <!-- Scripts -->
    <script type="module" src="/index.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 
 </html>

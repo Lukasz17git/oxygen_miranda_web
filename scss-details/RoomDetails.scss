@@ -1,0 +1,260 @@
+@import '../scss/Utils';
+
+.details-info {
+   &>strong {
+      padding: 2rem 0 1rem !important;
+   }
+
+   .room-price {
+      padding: 1rem 0;
+      display: block;
+   }
+
+   &>img {
+      width: 100%;
+      max-width: 30rem;
+      margin: auto;
+   }
+
+   &-availability {
+      padding: 1rem;
+
+      &>h3 {
+         @include text-normal-bold();
+         font-size: 1.125rem;
+         margin: auto;
+         text-align: center;
+         padding: 1rem 0;
+      }
+
+      &>.button-primary {
+         @include text-normal-bold();
+         margin: auto;
+         cursor: pointer;
+      }
+
+   }
+
+   &>p {
+      color: var(--grey);
+      line-height: 1.5em;
+      @include text-mini();
+      margin: 3rem auto;
+   }
+}
+
+.details-amenities {
+   &>h3 {
+      font-size: 1.75rem;
+   }
+
+   &>hr {
+      margin: 0.5rem 0;
+   }
+
+   &-list {
+      max-width: 24rem;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem 0.5rem;
+      margin-top: 2.5rem;
+
+      &>li {
+         display: flex;
+         gap: 0.5rem;
+         align-items: center;
+
+         &>img {
+            width: 1.25rem;
+            height: 1.25rem;
+         }
+
+         &>b {
+            @include text-mini();
+            letter-spacing: normal;
+            font-size: 0.875rem;
+
+         }
+      }
+   }
+}
+
+.details-founder {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   padding: 4rem 1rem;
+
+   &-profile {
+      width: 10rem;
+      height: 10rem;
+      background-image: url('/public/Images/fruit-parfait.jpg');
+      background-position: center;
+      background-size: contain;
+      border-radius: 50%;
+      position: relative;
+
+      &-tick {
+         position: absolute;
+         right: 0.625rem;
+         top: 0.625rem;
+         width: 2rem;
+         height: 2rem;
+         background-color: var(--main);
+         border-radius: 50%;
+         outline: solid 3px var(--white);
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         &>img {
+            width: 1rem;
+            height: 1rem;
+         }
+      }
+   }
+
+   &>h3 {
+      font-size: 2rem;
+   }
+
+   &>strong {
+      font-size: 1.25rem;
+      color: var(--main);
+   }
+
+   &>p {
+      color: var(--grey);
+      text-align: center;
+      line-height: 1.5em;
+   }
+}
+
+.details-cancellation {
+   &>h3 {
+      font-size: 1.75rem;
+   }
+
+   &>hr {
+      margin: 0.5rem 0;
+   }
+
+   &>p {
+      margin: 2rem auto 4rem;
+      color: var(--grey);
+      text-align: center;
+      line-height: 1.5em;
+   }
+}
+
+.details-related {
+   &>h3 {
+      font-size: 1.75rem;
+   }
+
+   &>hr {
+      margin: 0.5rem 0;
+   }
+
+   &-properties {
+      // position: absolute;
+      position: relative;
+      width: fit-content;
+      margin: auto;
+      z-index: 2;
+      transform: translateY(-50%);
+      box-shadow: 0px 8px 16px rgba(138, 138, 138, 0.1);
+   }
+
+   &-room {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 26rem;
+      margin: auto;
+      padding: 1rem 3rem;
+      gap: 1.5rem;
+      text-align: center;
+      height: 100%;
+      flex-grow: 1;
+   }
+
+   &-swiper {
+      margin-top: 2rem;
+      width: 100%;
+      height: 100%;
+      max-width: 40rem;
+      --swiper-pagination-color: var(--main);
+      --swiper-navigation-color: var(--white);
+      --swiper-navigation-sides-offset: 1.5rem;
+      --swiper-navigation-size: 1.25rem;
+
+      .icon-navigation--left,
+      .icon-navigation--right {
+         position: absolute;
+         z-index: 1;
+         left: 0.5rem;
+         top: 50%;
+         transform: translateY(-50%);
+         background-color: var(--main);
+      }
+
+      .icon-navigation--right {
+         right: 0.5rem;
+         left: unset;
+      }
+
+      .swiper-button-disabled {
+         background-color: var(--white) !important;
+         opacity: 0.5 !important;
+      }
+
+      .swiper-pagination {
+         position: relative !important;
+         top: 0 !important;
+         height: 2rem !important;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+
+      .swiper-wrapper {
+         height: 100%;
+      }
+
+      .swiper-slide {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         & img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+         }
+      }
+   }
+
+
+   &-swiper-text {
+      width: 90%;
+      height: 100%;
+      max-width: 30rem;
+      position: relative;
+      top: -0.5rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      border-radius: 0.25rem;
+
+      .swiper-slide {
+         height: auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: var(--white);
+      }
+   }
+}

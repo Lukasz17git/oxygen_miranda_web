@@ -31,6 +31,12 @@
    <link rel="stylesheet" href="/css/Footer.css">
    <link rel="stylesheet" href="/css/Menu.css">
    <link rel="stylesheet" href="/css/HeroRooms.css">
+   <link rel="stylesheet" href="/css/Burger.css">
+
+   <!-- Room Section -->
+   <link rel="stylesheet" href="/css/ContactCards.css">
+   <link rel="stylesheet" href="/css/ContactForm.css">
+
 </head>
 
 <body>
@@ -38,7 +44,11 @@
    <nav class="navbar">
       <section id='navbar-section' class="navbar-section">
          <button id='burger' class="icon navbar-burger">
-            <img src="/public/Icons/burger.svg" alt="menu" role="menubar" loading="lazy" />
+            <svg width="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+               <path d="M30 33h40c3.723 0 7.5 3.126 7.5 8.578S74.773 50 70 50H50" class="line top" />
+               <path d="M30 50h40" class="line middle" />
+               <path d="M70 67H30s-7.5-.802-7.5-8.366C22.5 51.071 30 50 30 50h20" class="line bottom" />
+            </svg>
          </button>
          <div class="navbar-logo">
             <a href="/" class="navbar-logo-icon">
@@ -53,6 +63,7 @@
             <img src="/public/Icons/search.svg" alt="search" />
          </button>
          <ul class="navbar-navigation">
+            <li></li>
             <li>
                <a href="/about">About Us</a>
             </li>
@@ -71,56 +82,54 @@
    <!-- Header -->
    <section class="header">
       <h3>THE ULTIMATE LUXURY</h3>
-      <h1>New Details</h1>
+      <h1>Newsletter</h1>
       <div class="header-navigation">
-         <span>Home</span>
-         <span>|</span>
-         <span>Blog</span>
+         <b>Home</b>
+         <b>|</b>
+         <b>Contact</b>
       </div>
    </section>
    <!-- Cards -->
-   <section>
-      <div class="contact-cards">
-         <div class="contact-card">
-            <div class="contact-card-icon">
-               <img />
-            </div>
-            <div class="contact-card-details">
-               <b>Hotel Address</b>
-               <p>19/A, Cirikon City hall Tower New York, NYC</p>
-            </div>
-            <span>01</span>
+   <section class="contact-cards">
+      <div class="contact-card">
+         <img />
+         <div class="contact-card-details">
+            <b>Hotel Address</b>
+            <p>19/A, Cirikon City hall Tower New York, NYC</p>
          </div>
-         <div class="contact-card">
-            <div class="contact-card-icon">
-               <img />
-            </div>
-            <div class="contact-card-details">
-               <b>Hotel Address</b>
-               <p>19/A, Cirikon City hall Tower New York, NYC</p>
-            </div>
-            <span>02</span>
+         <span>01</span>
+      </div>
+      <div class="contact-card">
+         <div class="contact-card-icon">
+            <img />
          </div>
-         <div class="contact-card">
-            <div class="contact-card-icon">
-               <img />
-            </div>
-            <div class="contact-card-details">
-               <b>Hotel Address</b>
-               <p>19/A, Cirikon City hall Tower New York, NYC</p>
-            </div>
-            <span>03</span>
+         <div class="contact-card-details">
+            <b>Hotel Address</b>
+            <p>19/A, Cirikon City hall Tower New York, NYC</p>
          </div>
+         <span>02</span>
+      </div>
+      <div class="contact-card">
+         <div class="contact-card-icon">
+            <img />
+         </div>
+         <div class="contact-card-details">
+            <b>Hotel Address</b>
+            <p>19/A, Cirikon City hall Tower New York, NYC</p>
+         </div>
+         <span>03</span>
       </div>
       <img />
    </section>
    <!-- Form -->
-   <section>
+   <section class="contact-form">
       <form>
-         <input type="text" />
-         <input type="text" />
-         <input type="text" />
-         <input type="text" />
+         <div class="contact-form-top">
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+            <input type="text" />
+         </div>
          <textarea type="text"></textarea>
          <input class="button-primary" type="submit" />
       </form>

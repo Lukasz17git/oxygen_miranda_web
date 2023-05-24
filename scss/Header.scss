@@ -5,6 +5,7 @@
    color: var(--white);
    padding-top: 8rem;
    padding-bottom: 4.5rem;
+   position: relative;
 
    &::before {
       content: '';
@@ -40,5 +41,18 @@
 
    &>.button-primary {
       margin: 1.5rem 0;
+   }
+
+   &-navigation {
+      background-color: var(--white);
+      padding: 1rem 1.5rem;
+      position: absolute;
+      right: 1rem;
+      bottom: 0;
+      color: var(--black);
+
+      &>b:last-child {
+         color: var(--main);
+      }
    }
 }

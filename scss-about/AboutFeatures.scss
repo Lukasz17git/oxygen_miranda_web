@@ -1,7 +1,10 @@
-@import 'Utils';
+@import '../scss/Utils';
 
 
-.hero-features {
+.about-features {
+   background-color: var(--black);
+   color: var(--white);
+
    &>strong {
       text-align: center;
    }
@@ -24,6 +27,7 @@
       padding: 2.5rem 1.5rem;
       position: relative;
       max-width: 20rem;
+      background-color: #292929;
 
       &>img {
          width: 4rem;
@@ -45,8 +49,9 @@
          position: absolute;
          right: 0;
          top: 0;
-         color: var(--white-with-opacity);
-         color: rgba(34, 34, 34, 0.04)
+         color: var(--black);
+         // color: rgba(34, 34, 34, 0.04)
+
       }
    }
 
@@ -56,6 +61,8 @@
       height: 100%;
       max-width: 40rem;
       --swiper-pagination-color: var(--main);
+      --swiper-pagination-bullet-inactive-color: var(--grey);
+
 
       .swiper-pagination {
          position: relative !important;
