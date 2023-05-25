@@ -103,16 +103,16 @@
 
 
    @media only screen and (min-width: 1000px) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(auto, 550px) minmax(auto, 550px);
       padding-top: 4rem;
       padding-bottom: 4rem;
+      justify-content: center;
 
       &-background {
          top: unset;
          height: calc(100% - 10rem);
-         width: 60%;
-         right: 0;
-         left: unset;
+         width: calc(50vw + 10%);
+         left: calc(40% - 0.53rem);
       }
 
       &-cards {

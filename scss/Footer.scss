@@ -21,7 +21,7 @@ footer {
             justify-content: center;
             gap: 1rem;
             width: 100%;
-            @include smax();
+            @include max-width();
             color: var(--black-light);
 
             @media only screen and (min-width: 1000px) {
@@ -48,7 +48,7 @@ footer {
             justify-content: space-between;
             gap: 4rem;
             padding: 4rem 0;
-            @include smax()
+            @include max-width()
          }
       }
 
@@ -101,6 +101,10 @@ footer {
 
                &:hover {
                   background-color: var(--main);
+
+                  &>img {
+                     filter: brightness(200%) contrast(150%) hue-rotate(180deg) saturate(0%) grayscale(100%);
+                  }
                }
             }
 

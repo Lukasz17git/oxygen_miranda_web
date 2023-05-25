@@ -11,10 +11,10 @@
    @media only screen and (min-width: 1000px) {
       position: sticky;
       max-width: 1000px;
-      top: -5.9rem;
+      top: -6rem;
       margin: auto;
       transform: translateY(50%);
-      transition: 0.5s;
+      transition: 0.4s;
 
       &::before {
          content: 'We Make Your Feel Comfortable';

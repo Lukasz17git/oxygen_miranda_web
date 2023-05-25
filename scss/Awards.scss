@@ -1,20 +1,25 @@
 @import 'Utils';
 
 .hero-awards {
-   @include smax();
    background-color: var(--black);
    color: var(--white);
-   padding: 4rem;
-   gap: 4rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   max-width: unset;
 
-   @media only screen and (min-width: 1000px) {
-      flex-direction: row;
-      justify-content: space-evenly;
+   &-wrapper {
+      padding: 4rem;
       gap: 4rem;
-      margin: 4rem auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @include max-width();
+
+      @media only screen and (min-width: 1000px) {
+         flex-direction: row;
+         justify-content: space-between;
+         gap: 4rem;
+         margin: 4rem auto;
+         padding: 4rem 0;
+      }
    }
 
    &-card {

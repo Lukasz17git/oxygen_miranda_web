@@ -1,7 +1,10 @@
+@import '../scss/Utils';
+
 .offers-popular {
    background-color: var(--black);
    color: var(--white);
    padding-bottom: 2rem;
+   max-width: unset;
 
    &>strong {
       color: var(--main) !important;
@@ -36,7 +39,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 26rem;
       margin: auto;
       padding: 1rem 3rem;
       gap: 1.5rem;
@@ -44,9 +46,34 @@
       height: 100%;
       flex-grow: 1;
       background-color: var(--black-light);
+      width: 100%;
 
       &>p {
          color: var(--silver);
+      }
+
+      &>.room-data {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: wrap;
+         gap: 1rem;
+
+         &>.room-price {
+            font-size: 1.25rem;
+
+            &::after {
+               font-size: 1rem;
+            }
+         }
+
+         &>.room-booking {
+            color: var(--grey);
+            @include text-normal-bold();
+            white-space: nowrap;
+            font-size: 1rem;
+            letter-spacing: normal;
+         }
       }
    }
 
@@ -54,7 +81,7 @@
       margin-top: 2rem;
       width: 100%;
       height: 100%;
-      max-width: 40rem;
+      max-width: 50rem;
       --swiper-navigation-color: var(--white);
       --swiper-navigation-sides-offset: 1.5rem;
       --swiper-navigation-size: 1.25rem;
@@ -68,7 +95,8 @@
          transform: translateY(-50%);
          background-color: rgb(119, 117, 117);
          opacity: 0.9;
-         &>img{
+
+         &>img {
             filter: invert(1);
          }
       }

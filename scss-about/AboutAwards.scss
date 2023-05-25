@@ -1,12 +1,22 @@
 @import '../scss/Utils';
 
 .about-awards {
+   max-width: 1050px;
+   padding-bottom: 4rem;
+
    &-cards {
       display: flex;
       flex-direction: column;
       gap: 2rem;
       margin: 4rem auto;
       width: fit-content;
+
+      @media only screen and (min-width: 1000px) {
+         flex-direction: row;
+         justify-content: space-between;
+         width: 100%;
+         gap: 0;
+      }
    }
 
    &-card {
@@ -14,6 +24,21 @@
       align-items: center;
       gap: 2rem;
       max-width: 20rem;
+      padding: 1rem 1.5rem;
+
+      &:hover {
+         background-color: var(--black);
+         color: var(--white);
+         border-radius: 0.25rem;
+
+         span {
+            color: var(--silver);
+         }
+      }
+
+      @media only screen and (min-width: 1000px) {
+         gap: 1.5rem;
+      }
 
       &>img {
          width: 4rem;
@@ -29,6 +54,7 @@
          &>span {
             font-size: 1rem;
             @include text-mini();
+            color: var(--grey);
          }
       }
 
@@ -65,6 +91,27 @@
             display: block;
             max-width: 100%;
             max-height: 100%;
+         }
+      }
+   }
+
+   &-gallery-swiper--desktop {
+      max-width: 1100px;
+      margin: auto;
+
+      &>.swiper-wrapper {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 1rem;
+         margin-top: 2rem;
+
+         &>.swiper-slide {
+
+            &>img {
+               max-width: 100%;
+               max-height: 100%;
+               border-radius: 0.25rem;
+            }
          }
       }
    }

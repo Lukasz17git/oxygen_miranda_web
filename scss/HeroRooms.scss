@@ -1,4 +1,6 @@
 .hero-rooms {
+   margin-bottom: 2rem;
+
    &>strong {
       text-align: center;
    }
@@ -32,7 +34,7 @@
    &-swiper {
       width: 100%;
       height: 100%;
-      max-width: 40rem;
+      max-width: 50rem;
       --swiper-pagination-color: var(--main);
       --swiper-navigation-color: var(--white);
       --swiper-navigation-sides-offset: 1.5rem;

@@ -4,6 +4,8 @@
 .about-features {
    background-color: var(--black);
    color: var(--white);
+   max-width: unset;
+   padding-bottom: 2rem;
 
    &>strong {
       text-align: center;
@@ -81,6 +83,24 @@
          display: flex;
          justify-content: center;
          align-items: center;
+      }
+   }
+
+
+   &-swiper--desktop {
+      max-width: 1100px;
+      &>.swiper-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 2rem;
+         justify-content: center;
+         align-items: center;
+         margin-top: 2rem;
+
+         &>.swiper-slide {
+            width: unset;
+            height: unset;
+         }
       }
    }
 }

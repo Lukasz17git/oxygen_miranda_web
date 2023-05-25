@@ -60,10 +60,10 @@
             </a>
             <img src="/public/Icons/logo-name.svg" alt="logo-name" />
          </div>
-         <button class="icon navbar-account">
+         <button onclick="window.location.href='/contact';" class="icon navbar-account">
             <img src="/public/Icons/account.svg" alt="account" />
          </button>
-         <button class="icon navbar-search">
+         <button onclick="window.location.href='/roomslist';" class="icon navbar-search">
             <img src="/public/Icons/search.svg" alt="search" />
          </button>
          <ul class="navbar-navigation">
@@ -96,11 +96,90 @@
    <!-- Offers List -->
    <section class="offers">
       <div class="offers-room">
-         <img src="/public/Images/hotel-6.jpg" loading="lazy" />
+         <img onclick="window.location.href='/offersdetails';" src="/public/Images/hotel-5.jpg" loading="lazy" />
          <div class="offers-room-data">
             <div class="offers-room-data-header">
                <strong>Double Bed</strong>
-               <h2>Luxury Double Bed</h2>
+               <h2 onclick="window.location.href='/offersdetails';">Premium Room</h2>
+               <div class="offers-room-data-header-prices">
+                  <b class="room-price--old">700</b>
+                  <b class="room-price--new">550</b>
+               </div>
+            </div>
+            <div class="offers-room-data-content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+               </p>
+               <ul class="offers-room-data-amenities-list">
+                  <li>
+                     <img src="/public/Icons/air-conditioner.svg" />
+                     <b>Air Conditioner</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/wifi-2.svg" />
+                     <b>High speed WiFi</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/breakfast-2.svg" />
+                     <b>Breakfast</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/kitchen.svg" />
+                     <b>Kitchen</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/cleaning.svg" />
+                     <b>Cleaning</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/shower.svg" />
+                     <b>Shower</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/grocery.svg" />
+                     <b>Grocery</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/bed-2.svg" />
+                     <b>Single bed</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/near-shop.svg" />
+                     <b>Shop near</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/towels.svg" />
+                     <b>Towels</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/support.svg" />
+                     <b>24/7 Online Support</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/key.svg" />
+                     <b>Strong Locker</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/lock.svg" />
+                     <b>Smart Security</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/expert-team.svg" />
+                     <b>Expert Team</b>
+                  </li>
+               </ul>
+               <button class="button-primary" onclick="window.location.href='/offersdetails';">Book Now</button>
+            </div>
+         </div>
+      </div>
+      <div class="offers-room">
+         <img onclick="window.location.href='/offersdetails';" src="/public/Images/hotel-6.jpg" loading="lazy" />
+         <div class="offers-room-data">
+            <div class="offers-room-data-header">
+               <strong>Double Bed</strong>
+               <h2 onclick="window.location.href='/offersdetails';">Luxury Double Bed</h2>
                <div class="offers-room-data-header-prices">
                   <b class="room-price--old">500</b>
                   <b class="room-price--new">345</b>
@@ -170,7 +249,165 @@
                      <b>Expert Team</b>
                   </li>
                </ul>
-               <button class="button-primary">Book Now</button>
+               <button class="button-primary" onclick="window.location.href='/offersdetails';">Book Now</button>
+            </div>
+         </div>
+      </div>
+      <div class="offers-room">
+         <img onclick="window.location.href='/offersdetails';" src="/public/Images/hotel-7.jpg" loading="lazy" />
+         <div class="offers-room-data">
+            <div class="offers-room-data-header">
+               <strong>Double Bed</strong>
+               <h2 onclick="window.location.href='/offersdetails';">Duplex Room</h2>
+               <div class="offers-room-data-header-prices">
+                  <b class="room-price--old">600</b>
+                  <b class="room-price--new">425</b>
+               </div>
+            </div>
+            <div class="offers-room-data-content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+               </p>
+               <ul class="offers-room-data-amenities-list">
+                  <li>
+                     <img src="/public/Icons/air-conditioner.svg" />
+                     <b>Air Conditioner</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/wifi-2.svg" />
+                     <b>High speed WiFi</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/breakfast-2.svg" />
+                     <b>Breakfast</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/kitchen.svg" />
+                     <b>Kitchen</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/cleaning.svg" />
+                     <b>Cleaning</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/shower.svg" />
+                     <b>Shower</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/grocery.svg" />
+                     <b>Grocery</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/bed-2.svg" />
+                     <b>Single bed</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/near-shop.svg" />
+                     <b>Shop near</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/towels.svg" />
+                     <b>Towels</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/support.svg" />
+                     <b>24/7 Online Support</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/key.svg" />
+                     <b>Strong Locker</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/lock.svg" />
+                     <b>Smart Security</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/expert-team.svg" />
+                     <b>Expert Team</b>
+                  </li>
+               </ul>
+               <button class="button-primary" onclick="window.location.href='/offersdetails';">Book Now</button>
+            </div>
+         </div>
+      </div>
+      <div class="offers-room">
+         <img onclick="window.location.href='/offersdetails';" src="/public/Images/hotel-8.jpg" loading="lazy" />
+         <div class="offers-room-data">
+            <div class="offers-room-data-header">
+               <strong>Double Bed</strong>
+               <h2 onclick="window.location.href='/offersdetails';">Big Room</h2>
+               <div class="offers-room-data-header-prices">
+                  <b class="room-price--old">650</b>
+                  <b class="room-price--new">465</b>
+               </div>
+            </div>
+            <div class="offers-room-data-content">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehend erit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur.
+               </p>
+               <ul class="offers-room-data-amenities-list">
+                  <li>
+                     <img src="/public/Icons/air-conditioner.svg" />
+                     <b>Air Conditioner</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/wifi-2.svg" />
+                     <b>High speed WiFi</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/breakfast-2.svg" />
+                     <b>Breakfast</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/kitchen.svg" />
+                     <b>Kitchen</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/cleaning.svg" />
+                     <b>Cleaning</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/shower.svg" />
+                     <b>Shower</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/grocery.svg" />
+                     <b>Grocery</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/bed-2.svg" />
+                     <b>Single bed</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/near-shop.svg" />
+                     <b>Shop near</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/towels.svg" />
+                     <b>Towels</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/support.svg" />
+                     <b>24/7 Online Support</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/key.svg" />
+                     <b>Strong Locker</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/lock.svg" />
+                     <b>Smart Security</b>
+                  </li>
+                  <li>
+                     <img src="/public/Icons/expert-team.svg" />
+                     <b>Expert Team</b>
+                  </li>
+               </ul>
+               <button class="button-primary" onclick="window.location.href='/offersdetails';">Book Now</button>
             </div>
          </div>
       </div>
@@ -188,13 +425,19 @@
                <img src="/public/Images/hotel-2.jpg" />
             </div>
             <div class="swiper-slide">
-               <img src="/public/Images/hotel-4.jpg" />
+               <img src="/public/Images/hotel-5.jpg" />
             </div>
             <div class="swiper-slide">
                <img src="/public/Images/hotel-6.jpg" />
             </div>
             <div class="swiper-slide">
                <img src="/public/Images/hotel-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+               <img src="/public/Images/hotel-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+               <img src="/public/Images/hotel-4.jpg" />
             </div>
          </div>
          <!-- <div class="swiper-pagination"></div> -->
@@ -239,7 +482,10 @@
                      eiusmod
                      tempor
                      incididunt ut labore et dolore.</p>
-                  <b class="room-price">295</b>
+                  <div class="room-data">
+                     <b class="room-price">295</b>
+                     <div class="room-booking">Booking Now</div>
+                  </div>
                </div>
             </div>
             <div class="swiper-slide">
@@ -248,7 +494,10 @@
                   <p class="room-description">Lorem ipsum dolor sit amet, sed do eiusmod
                      tempor
                      incididunt ut labore et dolore.</p>
-                  <b class="room-price">345</b>
+                  <div class="room-data">
+                     <b class="room-price">345</b>
+                     <div class="room-booking">Booking Now</div>
+                  </div>
                </div>
             </div>
             <div class="swiper-slide">
@@ -258,7 +507,10 @@
                      eiusmod
                      tempor
                      incididunt ut labore et dolore.</p>
-                  <b class="room-price">365</b>
+                  <div class="room-data">
+                     <b class="room-price">365</b>
+                     <div class="room-booking">Booking Now</div>
+                  </div>
                </div>
             </div>
             <div class="swiper-slide">
@@ -267,7 +519,10 @@
                   <p class="room-description">Lorem ipsum dolor sit amet, sed do eiusmod
                      tempor
                      incididunt ut labore et dolore.</p>
-                  <b class="room-price">420</b>
+                  <div class="room-data">
+                     <b class="room-price">420</b>
+                     <div class="room-booking">Booking Now</div>
+                  </div>
                </div>
             </div>
             <div class="swiper-slide">
@@ -277,7 +532,10 @@
                      eiusmod
                      tempor
                      incididunt ut labore et dolore.</p>
-                  <b class="room-price">550</b>
+                  <div class="room-data">
+                     <b class="room-price">550</b>
+                     <div class="room-booking">Booking Now</div>
+                  </div>
                </div>
             </div>
             <div class="swiper-slide">
@@ -286,7 +544,10 @@
                   <p class="room-description">Lorem ipsum dolor sit amet, sed do eiusmod
                      tempor
                      incididunt ut labore et dolore.</p>
-                  <b class="room-price">500</b>
+                  <div class="room-data">
+                     <b class="room-price">500</b>
+                     <div class="room-booking">Booking Now</div>
+                  </div>
                </div>
             </div>
             <div class="swiper-slide">
@@ -296,7 +557,10 @@
                      eiusmod
                      tempor
                      incididunt ut labore et dolore.</p>
-                  <b class="room-price">345</b>
+                  <div class="room-data">
+                     <b class="room-price">345</b>
+                     <div class="room-booking">Booking Now</div>
+                  </div>
                </div>
             </div>
          </div>
@@ -319,27 +583,27 @@
             </p>
             <ul>
                <li>
-                  <a class="icon">
+                  <a href="https://www.facebook.com/" target="_blank" class="icon">
                      <img src="/public/Icons/facebook.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://twitter.com/home" target="_blank" class="icon">
                      <img src="/public/Icons/twitter.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://www.binance.com/" target="_blank" class="icon">
                      <img src="/public/Icons/benance.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://www.linkedin.com/" target="_blank" class="icon">
                      <img src="/public/Icons/linkedin.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://www.youtube.com/" target="_blank" class="icon">
                      <img src="/public/Icons/youtube.svg" />
                   </a>
                </li>
@@ -367,14 +631,14 @@
                   <img src="/public/Icons/phone-number.svg" />
                   <div class="footer-contact-data">
                      <b>Phone Number</b>
-                     <span>+34 999 888 777</span>
+                     <span>+34 655 94 74 99</span>
                   </div>
                </div>
                <div class="footer-contact">
                   <img src="/public/Icons/email.png" />
                   <div class="footer-contact-data">
                      <b>Email</b>
-                     <span>contact@miranda.info</span>
+                     <span>lucas.m2295@gmail.com</span>
                   </div>
                </div>
                <div class="footer-contact">

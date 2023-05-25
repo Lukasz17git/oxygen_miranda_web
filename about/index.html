@@ -60,10 +60,10 @@
             </a>
             <img src="/public/Icons/logo-name.svg" alt="logo-name" />
          </div>
-         <button class="icon navbar-account">
+         <button onclick="window.location.href='/contact';" class="icon navbar-account">
             <img src="/public/Icons/account.svg" alt="account" />
          </button>
-         <button class="icon navbar-search">
+         <button onclick="window.location.href='/roomslist';" class="icon navbar-search">
             <img src="/public/Icons/search.svg" alt="search" />
          </button>
          <ul class="navbar-navigation">
@@ -107,23 +107,23 @@
       <h2>Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h2>
       <div class="about-description-cards">
          <div class="about-description-card">
-            <img />
+            <img src="/public/Icons/breakfast.svg" />
             <b>Breakfast</b>
          </div>
          <div class="about-description-card">
-            <img />
+            <img src="/public/Icons/plane.svg" />
             <b>Airport Pickup</b>
          </div>
          <div class="about-description-card">
-            <img />
+            <img src="/public/Icons/city-guide.svg" />
             <b>City Guide</b>
          </div>
-         <div class="about-description-card">
-            <img />
+         <div class="about-description-card about-description-card--hide">
+            <img src="/public/Icons/bbq.png" />
             <b>BBQ PARTY</b>
          </div>
          <div class="about-description-card">
-            <img />
+            <img src="/public/Icons/luxury.svg" />
             <b>Luxury Room</b>
          </div>
       </div>
@@ -137,7 +137,7 @@
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et
             dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-         <button class="button-primary">TAKE A TOUR</button>
+         <button onclick="window.location.href='/offers';" class="button-primary">TAKE A TOUR</button>
       </div>
    </section>
    <!-- Features -->
@@ -218,7 +218,7 @@
       <h2>Some Fun Facts</h2>
       <div class="about-awards-cards">
          <div class="about-awards-card">
-            <img />
+            <img src="/public/Icons/happy.svg" />
             <div class="about-awards-card-text">
                <strong>8000</strong>
                <span>Happy Users</span>
@@ -228,7 +228,7 @@
             </button>
          </div>
          <div class="about-awards-card">
-            <img />
+            <img src="/public/Icons/reviews.svg" />
             <div class="about-awards-card-text">
                <strong>10M</strong>
                <span>Reviews & Appriciate</span>
@@ -238,7 +238,7 @@
             </button>
          </div>
          <div class="about-awards-card">
-            <img />
+            <img src="/public/Icons/world.svg" />
             <div class="about-awards-card-text">
                <strong>100</strong>
                <span>Country Coverage</span>
@@ -257,13 +257,16 @@
                <img src="/public/Images/hotel-2.jpg" />
             </div>
             <div class="swiper-slide">
-               <img src="/public/Images/hotel-4.jpg" />
-            </div>
-            <div class="swiper-slide">
                <img src="/public/Images/hotel-6.jpg" />
             </div>
             <div class="swiper-slide">
                <img src="/public/Images/hotel-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+               <img src="/public/Images/hotel-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+               <img src="/public/Images/hotel-5.jpg" />
             </div>
          </div>
          <div class="swiper-pagination"></div>
@@ -286,27 +289,27 @@
             </p>
             <ul>
                <li>
-                  <a class="icon">
+                  <a href="https://www.facebook.com/" target="_blank" class="icon">
                      <img src="/public/Icons/facebook.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://twitter.com/home" target="_blank" class="icon">
                      <img src="/public/Icons/twitter.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://www.binance.com/" target="_blank" class="icon">
                      <img src="/public/Icons/benance.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://www.linkedin.com/" target="_blank" class="icon">
                      <img src="/public/Icons/linkedin.svg" />
                   </a>
                </li>
                <li>
-                  <a class="icon">
+                  <a href="https://www.youtube.com/" target="_blank" class="icon">
                      <img src="/public/Icons/youtube.svg" />
                   </a>
                </li>
@@ -334,14 +337,14 @@
                   <img src="/public/Icons/phone-number.svg" />
                   <div class="footer-contact-data">
                      <b>Phone Number</b>
-                     <span>+34 999 888 777</span>
+                     <span>+34 655 94 74 99</span>
                   </div>
                </div>
                <div class="footer-contact">
                   <img src="/public/Icons/email.png" />
                   <div class="footer-contact-data">
                      <b>Email</b>
-                     <span>contact@miranda.info</span>
+                     <span>lucas.m2295@gmail.com</span>
                   </div>
                </div>
                <div class="footer-contact">
@@ -369,19 +372,37 @@
    <!-- Initialize Swiper -->
    <script>
 
-      const aboutFeaturesSwiper = new Swiper(".about-features-swiper", {
-         pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-         }
-      });
+      const isDesktop = window.innerWidth >= 1000
 
-      const aboutAwardsGallerySwiper = new Swiper(".about-awards-gallery-swiper", {
-         pagination: {
-            el: ".swiper-pagination",
-            clickable: true
-         },
-      })
+      if (isDesktop) {
+         const classname = 'about-features-swiper'
+         const aboutFeaturesSwiper = document.getElementsByClassName(classname)[0]
+         aboutFeaturesSwiper.classList.toggle('swiper')
+         aboutFeaturesSwiper.classList.toggle(classname)
+         aboutFeaturesSwiper.classList.toggle(classname + '--desktop')
+      } else {
+         const aboutFeaturesSwiper = new Swiper(".about-features-swiper", {
+            pagination: {
+               el: ".swiper-pagination",
+               clickable: true
+            }
+         });
+      }
+
+      if (isDesktop) {
+         const classname = 'about-awards-gallery-swiper'
+         const aboutAwardsGallerySwiper = document.getElementsByClassName(classname)[0]
+         aboutAwardsGallerySwiper.classList.toggle('swiper')
+         aboutAwardsGallerySwiper.classList.toggle(classname)
+         aboutAwardsGallerySwiper.classList.toggle(classname + '--desktop')
+      } else {
+         const aboutAwardsGallerySwiper = new Swiper(".about-awards-gallery-swiper", {
+            pagination: {
+               el: ".swiper-pagination",
+               clickable: true
+            },
+         })
+      }
 
    </script>
 
