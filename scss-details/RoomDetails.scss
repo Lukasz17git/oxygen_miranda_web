@@ -128,7 +128,7 @@
             max-width: 20rem;
 
             &::-webkit-calendar-picker-indicator {
-               background-image: url('/public/Icons/date-picker-2.svg');
+               background-image: url('public/Icons/date-picker-2.svg');
                position: absolute;
                right: 1rem;
             }
@@ -240,7 +240,7 @@
    &-profile {
       width: 10rem;
       height: 10rem;
-      background-image: url('/public/Images/profile.jpg');
+      background-image: url('public/Images/profile.jpg');
       background-position: center;
       background-size: contain;
       border-radius: 50%;
